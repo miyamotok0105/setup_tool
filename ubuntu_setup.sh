@@ -84,16 +84,6 @@ yes | sudo apt-get install python-pip
 yes | sudo pip install trash-cli
 yes | sudo pip install -U setuptools
 
-#====================================================================
-# cuda
-#====================================================================
-yes | sudo apt-get install g++
-
-wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
-yes | sudo dpkg -i cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
-yes | sudo apt-get update
-yes | sudo apt-get install cuda
-yes | sudo apt-get install cuda-8-0
 
 
 #====================================================================
@@ -104,20 +94,4 @@ echo ‘other’
 #echo 'dropbox'
 #echo 'virtualbox,vagrant : http://qiita.com/seizans/items/ef220c98fde6dbfbee32'
 
-
-#====================================================================
-# cudnn
-#        you have to get cudnn account.and dowonload cudnn.tgz.
-#====================================================================
-wget https://www.dropbox.com/s/hn0mheafgt9bi3o/cudnn-8.0-linux-x64-v5.1.tgz
-tar -zxf cudnn-8.0-linux-x64-v5.1.tgz
-cd cuda
-sudo cp lib64/* /usr/local/cuda/lib64/
-sudo cp include/cudnn.h /usr/local/cuda/include/
-
-#====================================================================
-# chainer
-#====================================================================
-
-CUDA_PATH=/opt/nvidia/cuda pip install chainer
 
