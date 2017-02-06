@@ -109,14 +109,15 @@ echo ‘other’
 # cudnn
 #        you have to get cudnn account.and dowonload cudnn.tgz.
 #====================================================================
-#tar -zxf cudnn-8.0-linux-x64-v5.1.tgz
-#cd cuda
-#sudo cp lib64/* /usr/local/cuda/lib64/
-#sudo cp include/cudnn.h /usr/local/cuda/include/
+wget https://www.dropbox.com/s/hn0mheafgt9bi3o/cudnn-8.0-linux-x64-v5.1.tgz
+tar -zxf cudnn-8.0-linux-x64-v5.1.tgz
+cd cuda
+sudo cp lib64/* /usr/local/cuda/lib64/
+sudo cp include/cudnn.h /usr/local/cuda/include/
 
 #====================================================================
 # chainer
 #====================================================================
 
-#CUDA_PATH=/opt/nvidia/cuda pip install chainer
+CUDA_PATH=/opt/nvidia/cuda pip install chainer
 
