@@ -2,6 +2,8 @@
 #====================================================================
 # cuda
 #====================================================================
+#cuda8.0
+
 yes | sudo apt-get install g++
 
 wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64-deb
