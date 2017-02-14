@@ -8,6 +8,7 @@
 # sudo apt-get install libboost-dev
 # sudo apt-get install libboost-python-dev
 # sudo apt-get install libboost-system-dev
+# sudo apt-get install libopenblas-dev
 
 sudo pip install dlib
 
