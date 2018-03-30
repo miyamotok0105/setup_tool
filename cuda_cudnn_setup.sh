@@ -13,9 +13,8 @@ yes | sudo apt-get install cuda
 yes | sudo apt-get install cuda-8-0
 
 echo "#CUDA" >> ~/.bashrc
-echo "export CUDA_HOME=/usr/local/cuda-8.0" >> ~/.bashrc
-echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${CUDA_HOME}/lib64" >> ~/.bashrc
-echo "export PATH=$PATH:${CUDA_HOME}/bin" >> ~/.bashrc
+export PATH="/usr/local/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 source ~/.bashrc
 
 #====================================================================
